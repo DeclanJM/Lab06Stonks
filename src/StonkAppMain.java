@@ -21,7 +21,7 @@ public class StonkAppMain {
         String walletChoice = view.getAction("Would you like to start with the default wallet, or enter your own?\n" +
                 "Enter [d]efault or [c]ustom: ");
         if(walletChoice.startsWith("d")){
-            w = new Wallet();
+            w = new Wallet(0,0);
         }
         else{
             int fazCoin = Integer.parseInt(view.getAction("So you want to invest more!\n"

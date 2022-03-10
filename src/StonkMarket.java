@@ -9,6 +9,11 @@ public double getExchangeRate(){
     return exchangeRate;
 }
 
+public double changeExchangeRate(){
+    exchangeRate += (RANDY.nextDouble() - 0.5);
+    return exchangeRate;
+}
+
     public double fazCoinToUSD(int fazCoin){
         return (fazCoin * getExchangeRate()) / 100.0;
     }
