@@ -14,9 +14,14 @@ public double changeExchangeRate(){
     return exchangeRate;
 }
 
-    public double fazCoinToUSD(int fazCoin){
-        return (fazCoin * getExchangeRate()) / 100.0;
-    }
+public double fazCoinToUSD(int fazCoin){
+    return (fazCoin * getExchangeRate()) / 100.0;
+}
 
+public static void main(String args[]){         //Tester main method
+    StonkMarket test = new StonkMarket();
+    test.changeExchangeRate();
+    System.out.println(test.getExchangeRate());
+}
 
 }

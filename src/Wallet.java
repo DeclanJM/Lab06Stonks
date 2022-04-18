@@ -1,9 +1,11 @@
-public class Wallet {
+public class Wallet{
 
-    private int fazCoin = 500;
-    private double USDollars = 5;
+    private int fazCoin;
+    private double USDollars;
 
     public Wallet(){
+        fazCoin = 500;
+        USDollars = 5;
     }
 
     public Wallet(int fazCoin, double USDollars){
